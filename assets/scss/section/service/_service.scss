@@ -1,0 +1,170 @@
+/*service start*/
+
+.service {
+    .service-items {
+        .service-item {
+            padding-bottom: 110px;
+            .item-wrapper {
+                margin-top: 80px;
+                background-color: $primary-color;
+                .service-img-area {
+                    .service-img {
+                        width: 100%;
+                        padding: 10px;
+                        padding: 20px;
+                        height: 100%;
+                        background-color: gray;
+                        position: relative;
+                        bottom: 50px;
+                        img {
+                            display: inline-block;
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    padding-left:40px;
+                    height: 100%;
+                }
+                .service-item-desc {
+                    .item-no {
+                        font-size: 40px;
+                        color: $white;
+                        font-weight: 700;
+                        padding: 20px 40px;
+                        border: 3px solid $white;
+                        display: inline-block;
+                    }
+                    h3 {
+                        font-size: 40px;
+                        margin-top: 30px;
+                        color: $white
+                    }
+                    .single-item-desc {
+                        color: $white;
+                    }
+                    .service-down {
+                        .type-item {
+                            p {
+                                font-size: 20px;
+                                font-weight: 700;
+                                color: $white;
+                                text-transform: uppercase;
+                                margin-bottom: 0;
+                            }
+                            margin:10px 70px 10px 0;
+                            span {
+                                color: $title-color;
+                                font-weight: 600;
+                            }
+                        }
+                        margin:15px 0 15px 0;
+                    }
+                    padding: 30px 70px 30px 0;
+                    .prim-btn {
+                        display: inline-block;
+                        padding: 10px 40px;
+                        margin-bottom: 40px;
+                        font-family: $titleFont;
+                        font-size: 20px;
+                        text-transform: capitalize;
+                        font-weight: 700;
+                        color: $white;
+                        @include border-radius(30px);
+                        border: 2px solid $white;
+                        &:hover {
+                            background-color: $title-color;
+                            border-color: $title-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive area start
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .service {
+        .service-items {
+            .service-item {
+                .item-wrapper {
+                    .service-img-area {
+                        padding-left: 40px;
+                    }
+                    .service-item-desc {
+                        .item-no {
+                            font-size: 30px;
+                            padding: 13px 30px;
+                        }
+                        h3 {
+                            font-size: 35px;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .service {
+        .service-items {
+            .service-item {
+                .item-wrapper {
+                    .service-img-area {
+                        padding: 0 50px 0 50px;
+                        .service-img {
+                            width: 100%;
+                            padding: 20px;
+                            height: 80%;
+                            bottom: 0;
+                            top: 30px;
+                            img {
+                                display: inline-block;
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    .service-item-desc {
+                        .item-no {
+                            display: block;
+                            font-size: 30px;
+                            padding: 13px 30px;
+                            margin: 0 auto;
+                            text-align: center;
+                            width: 100px;
+                        }
+                        h3 {
+                            font-size: 35px;
+                            margin-top: 30px;
+                        }
+                        padding: 0;
+                        text-align: center;
+                        p {
+                            padding: 0 30px;
+                        }
+                        .service-down {
+                            justify-content: space-around;
+                            .type-item {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// responsive area end
+
+/*service end*/

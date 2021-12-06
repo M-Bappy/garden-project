@@ -1,0 +1,36 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Google domain
+Template URI: 
+Description: 
+Author:
+Author URI: 
+Version: 1.0
+
+---------------------- common content ----------
+#.body reset content
+#.header area
+#.footer
+#.hero-banner-area
+#.button
+
+*/
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@500;600;700&display=swap');
+// variable
+@import "variable/_variable.scss";
+// mixin
+@import "mixin/_mixin.scss";
+// body reset content
+@import "reset/_predefine.scss";
+// component content
+@import "section/header/header";
+@import "section/banner/banner";
+@import "section/desc/desc";
+@import "section/service/service";
+@import "section/counter/counter";
+@import "section/latestProject/latestProject";
+@import "section/testimonial/testimonial";
+@import "section/footer/footer";

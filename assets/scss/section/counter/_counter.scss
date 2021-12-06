@@ -1,0 +1,60 @@
+/*counter start*/
+
+.counter {
+    background-color: $primary-color;
+    padding: 20px 80px;
+    .counter-item {
+        i {
+            font-size: 40px;
+            color: $white;
+            margin-right: 30px;
+        }
+        .counter-text {
+            .count {
+                font-size: 40px;
+            }
+            .plus {
+                font-size: 40px;
+            }
+            span {
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+        padding:20px 0;
+    }
+}
+
+// responsive area start
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .counter {
+        padding: 20px 40px;
+        .counter-item {
+            text-align: center;
+            flex-direction: column;
+            i {
+                margin-bottom: 30px;
+                margin-right: 0;
+            }
+            .counter-text {
+                .count {
+                    font-size: 35px;
+                }
+                span {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// responsive area end
+
+/*counter end*/

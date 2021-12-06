@@ -1,0 +1,60 @@
+/*header start*/
+
+.header {
+    margin-bottom: -60px;
+    position: relative;
+    z-index: 99999;
+    background-color: $primary-color;
+    border-radius: 0 0 60px 0;
+    .navbar {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    position: relative;
+                    text-transform: capitalize;
+                    font-family: $titleFont;
+                    font-weight: 500;
+                    color: $bfColor;
+                    border-bottom: 2px solid transparent;
+                    @include transition(.3s all ease-in);
+                    &:hover {
+                        border-bottom: 2px solid $white;
+                        color: $white;
+                    }
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                margin-left:20px;
+            }
+        }
+        .navbar-brand {
+            height: 70px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+// responsive area start
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .header {
+        .navbar-nav {
+            text-align: center;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .header {
+        .navbar-nav {
+            text-align: center;
+        }
+    }
+}
+
+// responsive area end
+
+/*header end*/
